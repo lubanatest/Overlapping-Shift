@@ -5,6 +5,13 @@
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="overlapping.js" ></script>
+    
+    <style>
+    .container {
+      width: 100px;
+    }
+    </style>
   </head>
   <body>
     <h3>Overlapping Shift</h3>
