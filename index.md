@@ -22,11 +22,11 @@
         if (startTime1)
           startTime1 = startTime1.unix();
         else
-          error = 'Start Time shouldn't be empty;
+          error = 'Start Time should not be empty';
         if (endTime1)
           endTime1 = endTime1.unix();
         else
-          error = 'End Time shouldn't be empty;
+          error = 'End Time should not be empty';
           
         console.log(startTime1);
         console.log(endTime1);
@@ -48,7 +48,7 @@
       
         if (error !== '')
           document.getElementById('result').innerHTML = ' ' + error;
-         else {
+        else {
            var shift1 = new Shift(Math.random(), employee1, department1, startTime1, endTime1);
            var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
         
