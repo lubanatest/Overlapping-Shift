@@ -24,6 +24,9 @@
     .container {
       width: 400px;
     }
+    .form-control {
+      width: 400px;
+    }
     </style>
   </head>
   <body>
@@ -33,6 +36,13 @@
     <div class="container">
     <div><b>Employee ID:</b></div>
     <div><input type='text' class="form-control" name="employee1" id="employee1"/></div>
+    <div><b>Department:</b></div>
+    <div>
+      <select class="form-control" name="department1" id="department1">
+      <option>xx</option>
+      <option>g</option>
+      </select>
+    </div>
     <div><b>Start Time:</b></div>
     <div class="row">
         <div class='col-sm-6'>
