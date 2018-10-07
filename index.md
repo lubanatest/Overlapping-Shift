@@ -12,10 +12,10 @@
     <script src="shift.js" ></script>
     <script>
       function checkOverlapping() {
-        
+        var error = '';
         var employee1 = document.getElementById('employee1').value;
         var department1 = document.getElementById('department1').value;
-        var startTime1 = $('#datetimepicker1').data('DateTimePicker').date().unix();
+        var startTime1 = $('#datetimepicker1').data('DateTimePicker').date();
         var endTime1 = $('#datetimepicker2').data('DateTimePicker').date().unix();
         
         console.log(startTime1);
@@ -57,9 +57,9 @@
     <div>Department:</div>
     <div>
       <select class="form-control" name="department1" id="department1">
-        <option>HR Department</option>
-        <option>IT Department</option>
-        <option>Sales Department</option>
+        <option value="1">HR Department</option>
+        <option value="2">IT Department</option>
+        <option value="3">Sales Department</option>
       </select>
     </div>
     <div>Start Time:</div>
