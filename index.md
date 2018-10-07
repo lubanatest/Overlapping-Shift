@@ -144,7 +144,7 @@
         </script>
     </div>
     
-    <div><input type="button" onclick="setData()" value="Check Overlapping" /></div>
+    <div><input type="button" onclick="checkOverlapping()" value="Check Overlapping" /></div>
 
   </div>
   </body>
