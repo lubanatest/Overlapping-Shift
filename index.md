@@ -17,8 +17,14 @@
         var department1 = document.getElementById('department1').value;
         var startTime1 = document.getElementById('startTime1').value;
         var endTime1 = document.getElementById('endTime1').value;
-        var shift1 = new Shift(Math.random(), employee1, department1, startTime1, startTime1);
-        var shift2 = new Shift(Math.random(), employee1, department1, startTime1, startTime1);
+        
+        var employee2 = document.getElementById('employee2').value;
+        var department2 = document.getElementById('department2').value;
+        var startTime2 = document.getElementById('startTime2').value;
+        var endTime2 = document.getElementById('endTime2').value;
+        
+        var shift1 = new Shift(Math.random(), employee1, department1, startTime1, endTime1);
+        var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
         
         isOverlapping(shif1, shift2);
         
@@ -82,6 +88,57 @@
         <script type="text/javascript">
             $(function () {
                 $('#datetimepicker2').datetimepicker();
+            });
+        </script>
+    </div>
+    
+    <h3>Shift Two</h3>
+    
+    <div class="container">
+    <div>Employee ID:</div>
+    <div><input type='text' class="form-control" name="employee2" id="employee2" value="1"/></div>
+    <div>Department:</div>
+    <div>
+      <select class="form-control" name="department2" id="department2">
+        <option>HR Department</option>
+        <option>IT Department</option>
+        <option>Sales Department</option>
+      </select>
+    </div>
+    <div>Start Time:</div>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker3'>
+                    <input type='text' class="form-control" id="startTime2" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker3').datetimepicker();
+            });
+        </script>
+    </div>
+    
+    <div>End Time:</div>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker4'>
+                    <input type='text' class="form-control" id="endTime3" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker4').datetimepicker();
             });
         </script>
     </div>
