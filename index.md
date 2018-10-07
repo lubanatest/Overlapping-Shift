@@ -173,7 +173,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker3'>
-                    <input type='text' class="form-control" id="startTime2" 10/02/2018 10:00 AM/>
+                    <input type='text' class="form-control" id="startTime2" value="10/02/2018 10:00 AM"/>
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
