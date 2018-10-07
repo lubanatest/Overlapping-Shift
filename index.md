@@ -32,7 +32,7 @@
         var shift1 = new Shift(Math.random(), employee1, department1, startTime1, endTime1);
         var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
         
-        var result = isOverlapping(shif1, shift2);
+        var result = isOverlapping(shift1, shift2);
         console.log(result);
         
         document.getElementById('result').innerHTML = 'Result: ' + result.toString();
