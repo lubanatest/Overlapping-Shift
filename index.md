@@ -27,7 +27,7 @@
         // Validation Shift one
         //-----------------------------------------------
         
-        var error = '';:
+        var error = '';
         if (startTime1) {
           startTime1 = startTime1.unix();
         }
