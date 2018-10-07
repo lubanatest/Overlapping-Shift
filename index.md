@@ -20,12 +20,17 @@
         
         console.log(startTime1);
         console.log(endTime1);
-        
+        if (startTime1 > endTime1)
+          error = 'Start Time should be before End time';
+          
         var employee2 = document.getElementById('employee2').value;
         var department2 = document.getElementById('department2').value;
         var startTime2 = $('#datetimepicker3').data('DateTimePicker').date().unix();;
         var endTime2 = $('#datetimepicker4').data('DateTimePicker').date().unix();;
        
+       if (startTime2 > endTime2)
+          error = 'Start Time should be before End time';
+        
         console.log(startTime2);
         console.log(endTime2);
        
