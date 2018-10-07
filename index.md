@@ -32,13 +32,13 @@
           startTime1 = startTime1.unix();
         }
         else {
-          error = 'Start Time should not be empty';
+          error += 'Start Time should not be empty\n';
         }
         if (endTime1) {
           endTime1 = endTime1.unix();
         }
         else {
-          error = 'End Time should not be empty';
+          error += 'End Time should not be empty\n';
         }  
         if (startTime1 > endTime1)
           error = 'Start Time should be before End time';
@@ -51,17 +51,17 @@
           startTime2 = startTime2.unix();
         }
         else {
-          error = 'Start Time should not be empty';
+          error += 'Start Time should not be empty\n';
         }
        
         if (endTime2) {
           endTime2 = endTime2.unix();
         }
         else {
-          error = 'End Time should not be empty';
+          error += 'End Time should not be empty\n';
         }  
         if (startTime2 > endTime2)
-          error = 'Start Time should be before End time';
+          error += 'Start Time should be before End time\n';
         
         //-----------------------------------------------
         
