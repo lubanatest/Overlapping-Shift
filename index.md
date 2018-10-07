@@ -34,6 +34,8 @@
         
         var result = isOverlapping(shif1, shift2);
         console.log(result);
+        
+        document.getElementById('result').innerHTML = 'Result: ' + result.toString();
       }
     </script>
     <style>
@@ -151,6 +153,9 @@
     </div>
     
     <div><input type="button" onclick="checkOverlapping()" value="Check Overlapping" /></div>
+    
+    <div id="result">
+    </div>
 
   </div>
   </body>
