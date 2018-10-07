@@ -15,8 +15,10 @@
   </head>
   <body>
     <h3>Overlapping Shift</h3>
+    <h3>Shift One</h3>
     
     <div class="container">
+    <div>Start Time:</div>
     <div class="row">
         <div class='col-sm-6'>
             <div class="form-group">
