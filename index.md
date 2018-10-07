@@ -33,9 +33,9 @@
     <h3>Shift One</h3>
     
     <div class="container">
-    <div><b>Employee ID:</b></div>
+    <div>Employee ID:</div>
     <div><input type='text' class="input" name="employee1" id="employee1"/></div>
-    <div><b>Department:</b></div>
+    <div>Department:</div>
     <div>
       <select class="input" name="department1" id="department1">
         <option>HR Department</option>
@@ -43,7 +43,7 @@
         <option>Sales Department</option>
       </select>
     </div>
-    <div><b>Start Time:</b></div>
+    <div>Start Time:</div>
     <div class="row">
         <div class='col-sm-6'>
             <div class="form-group">
