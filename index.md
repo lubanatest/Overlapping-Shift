@@ -32,7 +32,7 @@
           startTime1 = startTime1.unix();
         }
         else {
-          error += 'Start Time should not be empty\n';
+          error += 'Start Time should not be empty <br/>';
         }
         if (endTime1) {
           endTime1 = endTime1.unix();
@@ -41,7 +41,7 @@
           error += 'End Time should not be empty\n';
         }  
         if (startTime1 > endTime1)
-          error = 'Start Time should be before End time';
+          error += 'Start Time should be before End time <br/>';
           
         //-----------------------------------------------
         // Validation Shift two
@@ -51,17 +51,17 @@
           startTime2 = startTime2.unix();
         }
         else {
-          error += 'Start Time should not be empty\n';
+          error += 'Start Time should not be empty  <br/>';
         }
        
         if (endTime2) {
           endTime2 = endTime2.unix();
         }
         else {
-          error += 'End Time should not be empty\n';
+          error += 'End Time should not be empty  <br/>';
         }  
         if (startTime2 > endTime2)
-          error += 'Start Time should be before End time\n';
+          error += 'Start Time should be before End time <br/>';
         
         //-----------------------------------------------
         
@@ -93,6 +93,11 @@
     }
     .form-control {
       width: 400px;
+    }
+    .result {
+      padding: 10px;
+      font-weight: bold;
+      color: red;
     }
     </style>
   </head>
@@ -203,7 +208,7 @@
     
     <div><input type="button" onclick="checkOverlapping()" value="Check Overlapping" /></div>
     
-    <div id="result">
+    <div id="result" class="result">
     </div>
 
   </div>
