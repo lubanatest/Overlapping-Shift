@@ -5,11 +5,13 @@
     <!-- jQuery library -->
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
     <script src="overlapping.js" ></script>
     <script src="shift.js" ></script>
     
     <style>
-    .container {
+    input {
       width: 700px;
     }
     </style>
