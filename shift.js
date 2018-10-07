@@ -1,10 +1,7 @@
 /*****************************************/
-/*    This File includes Shift class     */
+/*    		 class Shift     	 */
 /*****************************************/
 
-/*
- * class Shift
- */
 class Shift {
   /*
    * Constructor
@@ -17,3 +14,5 @@ class Shift {
 		this.endTime = endTime;
 	}
 }
+
+/*****************************************/
