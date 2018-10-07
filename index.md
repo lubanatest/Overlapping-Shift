@@ -19,11 +19,16 @@
         var endTime1 = $('#datetimepicker2').data('DateTimePicker').date().unix();
         
         console.log(startTime1);
+        console.log(endTime1);
+        
         var employee2 = document.getElementById('employee2').value;
         var department2 = document.getElementById('department2').value;
         var startTime2 = $('#datetimepicker3').data('DateTimePicker').date().unix();;
         var endTime2 = $('#datetimepicker4').data('DateTimePicker').date().unix();;
-        
+       
+        console.log(startTime2);
+        console.log(endTime2);
+       
         var shift1 = new Shift(Math.random(), employee1, department1, startTime1, endTime1);
         var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
         
