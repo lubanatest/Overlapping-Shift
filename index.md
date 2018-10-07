@@ -45,16 +45,16 @@
         
         console.log(startTime2);
         console.log(endTime2);
-       
-        var shift1 = new Shift(Math.random(), employee1, department1, startTime1, endTime1);
-        var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
-        
-        var result = isOverlapping(shift1, shift2);
-        console.log(result);
-        
-        document.getElementById('result').innerHTML = 'Result: ' + result.toString();
+      
         if (error !== '')
           document.getElementById('result').innerHTML = ' ' + error;
+         else {
+           var shift1 = new Shift(Math.random(), employee1, department1, startTime1, endTime1);
+           var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
+        
+           var result = isOverlapping(shift1, shift2);
+           document.getElementById('result').innerHTML = 'Result: ' + result.toString();
+        }
       }
     </script>
     <style>
