@@ -53,6 +53,8 @@
         console.log(result);
         
         document.getElementById('result').innerHTML = 'Result: ' + result.toString();
+        if (error !== '')
+          document.getElementById('result').innerHTML = ' ' + error;
       }
     </script>
     <style>
