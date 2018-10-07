@@ -15,9 +15,10 @@
         
         var employee1 = document.getElementById('employee1').value;
         var department1 = document.getElementById('department1').value;
-        var startTime1 = document.getElementById('startTime1').value;
+        var startTime1 = $('#datetimepicker1').data('DateTimePicker').date().unix();
         var endTime1 = document.getElementById('endTime1').value;
         
+        console.log(startTime1);
         var employee2 = document.getElementById('employee2').value;
         var department2 = document.getElementById('department2').value;
         var startTime2 = document.getElementById('startTime2').value;
