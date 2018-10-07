@@ -121,7 +121,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" id="startTime1" />
+                    <input type='text' class="form-control" id="startTime1" value="10/02/2018 8:00 AM"/>
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
@@ -140,7 +140,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker2'>
-                    <input type='text' class="form-control" id="endTime1" />
+                    <input type='text' class="form-control" id="endTime1" value="10/02/2018 11:00 AM" />
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
@@ -173,7 +173,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker3'>
-                    <input type='text' class="form-control" id="startTime2" />
+                    <input type='text' class="form-control" id="startTime2" 10/02/2018 10:00 AM/>
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
@@ -192,7 +192,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker4'>
-                    <input type='text' class="form-control" id="endTime2" />
+                    <input type='text' class="form-control" id="endTime2" value="10/02/2018 11:00 AM" />
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
