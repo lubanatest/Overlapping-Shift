@@ -17,8 +17,10 @@
         var department1 = document.getElementById('department1').value;
         var startTime1 = document.getElementById('startTime1').value;
         // var endTime1 = document.getElementById('endTime1').value;
-        var shift1 = new Shift(1, employee1, department1, startTime1, startTime1);
-        isOverlapping(shif1, shift1);
+        var shift1 = new Shift(Math.random(), employee1, department1, startTime1, startTime1);
+        var shift2 = new Shift(Math.random(), employee1, department1, startTime1, startTime1);
+        
+        isOverlapping(shif1, shift2);
         
       }
     </script>
