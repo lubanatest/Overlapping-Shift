@@ -38,7 +38,7 @@
           endTime1 = endTime1.unix();
         }
         else {
-          error += 'End Time should not be empty\n';
+          error += 'End Time should not be empty <br/>';
         }  
         if (startTime1 > endTime1)
           error += 'Start Time should be before End time <br/>';
