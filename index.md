@@ -10,10 +10,19 @@
 
     <script src="overlapping.js" ></script>
     <script src="shift.js" ></script>
-    
+    <script>
+      function setData() {
+        var employee1 = document.getElementById('employee1').value;
+        var startTime1 = document.getElementById('startTime1').value;
+        // var employee1 = document.getElementById('employee1').value;
+        console.log(employee1);
+        console.log(startTime1);
+      }
+      
+    </script>
     <style>
     input {
-      width: 700px;
+      width: 100px;
     }
     </style>
   </head>
@@ -23,7 +32,7 @@
     
     <div class="container">
     <div><b>Employee ID:</b></div>
-    <div><input type='text' class="form-control" name="employee" /></div>
+    <div><input type='text' class="form-control" name="employee1" id="employee1"/></div>
     <div><b>Start Time:</b></div>
     <div class="row">
         <div class='col-sm-6'>
@@ -42,7 +51,8 @@
             });
         </script>
     </div>
-</div>
+    
+    <div><input type="button" onclick="setData()" value="Check Overlapping" /></div>
 
   </body>
   </html>
