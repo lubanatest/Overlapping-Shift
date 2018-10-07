@@ -11,12 +11,16 @@
     <script src="overlapping.js" ></script>
     <script src="shift.js" ></script>
     <script>
-      function setData() {
+      function checkOverlapping() {
+        
         var employee1 = document.getElementById('employee1').value;
         var department1 = document.getElementById('department1').value;
         var startTime1 = document.getElementById('startTime1').value;
         // var endTime1 = document.getElementById('endTime1').value;
-      }  
+        var shift1 = new Shift(1, employee1, department1, startTime1, startTime1);
+        isOverlapping(shif1, shift1);
+        
+      }
     </script>
     <style>
     .container {
