@@ -20,9 +20,10 @@
     </script>
     <style>
     .container {
-      width: 400px;
+      width: 600px;
     }
-    .form-control {
+    
+    .input {
       width: 400px;
     }
     </style>
@@ -33,10 +34,10 @@
     
     <div class="container">
     <div><b>Employee ID:</b></div>
-    <div><input type='text' class="form-control" name="employee1" id="employee1"/></div>
+    <div><input type='text' class="input" name="employee1" id="employee1"/></div>
     <div><b>Department:</b></div>
     <div>
-      <select class="form-control" name="department1" id="department1">
+      <select class="input" name="department1" id="department1">
         <option>HR Department</option>
         <option>IT Department</option>
         <option>Sales Department</option>
