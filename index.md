@@ -21,8 +21,8 @@
       
     </script>
     <style>
-    input {
-      width: 100px;
+    .container {
+      width: 400px;
     }
     </style>
   </head>
@@ -38,7 +38,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
+                    <input type='text' class="form-control" id="startTime1" />
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
@@ -54,5 +54,6 @@
     
     <div><input type="button" onclick="setData()" value="Check Overlapping" /></div>
 
+  </div>
   </body>
   </html>
