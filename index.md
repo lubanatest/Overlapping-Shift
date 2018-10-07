@@ -131,7 +131,7 @@
         <div class='col-sm-6'>
             <div class="form-group">
                 <div class='input-group date' id='datetimepicker4'>
-                    <input type='text' class="form-control" id="endTime3" />
+                    <input type='text' class="form-control" id="endTime2" />
                     <span class="input-group-addon">
                         <span class="glyphicon glyphicon-calendar"></span>
                     </span>
