@@ -28,8 +28,7 @@
     .container {
       width: 600px;
     }
-    
-    .input {
+    .form-control {
       width: 400px;
     }
     </style>
@@ -40,10 +39,10 @@
     
     <div class="container">
     <div>Employee ID:</div>
-    <div><input type='text' class="input" name="employee1" id="employee1"/></div>
+    <div><input type='text' class="form-control" name="employee1" id="employee1"/></div>
     <div>Department:</div>
     <div>
-      <select class="input" name="department1" id="department1">
+      <select class="form-control" name="department1" id="department1">
         <option>HR Department</option>
         <option>IT Department</option>
         <option>Sales Department</option>
