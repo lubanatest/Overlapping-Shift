@@ -13,12 +13,10 @@
     <script>
       function setData() {
         var employee1 = document.getElementById('employee1').value;
+        var department1 = document.getElementById('department1').value;
         var startTime1 = document.getElementById('startTime1').value;
-        // var employee1 = document.getElementById('employee1').value;
-        console.log(employee1);
-        console.log(startTime1);
-      }
-      
+        // var endTime1 = document.getElementById('endTime1').value;
+      }  
     </script>
     <style>
     .container {
@@ -39,8 +37,9 @@
     <div><b>Department:</b></div>
     <div>
       <select class="form-control" name="department1" id="department1">
-      <option>xx</option>
-      <option>g</option>
+        <option>HR Department</option>
+        <option>IT Department</option>
+        <option>Sales Department</option>
       </select>
     </div>
     <div><b>Start Time:</b></div>
