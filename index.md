@@ -18,10 +18,22 @@
         var startTime1 = $('#datetimepicker1').data('DateTimePicker').date();
         var endTime1 = $('#datetimepicker2').data('DateTimePicker').date().unix();
         
+        // Validation:
+        if (startTime1)
+          startTime1 = startTime1.unix();
+        else
+          error = 'Start Time shouldn't be empty;
+        if (endTime1)
+          endTime1 = endTime1.unix();
+        else
+          error = 'End Time shouldn't be empty;
+          
         console.log(startTime1);
         console.log(endTime1);
         if (startTime1 > endTime1)
           error = 'Start Time should be before End time';
+          
+        // --------------------------------------------
           
         var employee2 = document.getElementById('employee2').value;
         var department2 = document.getElementById('department2').value;
