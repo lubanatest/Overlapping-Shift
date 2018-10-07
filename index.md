@@ -16,7 +16,7 @@
         var employee1 = document.getElementById('employee1').value;
         var department1 = document.getElementById('department1').value;
         var startTime1 = document.getElementById('startTime1').value;
-        // var endTime1 = document.getElementById('endTime1').value;
+        var endTime1 = document.getElementById('endTime1').value;
         var shift1 = new Shift(Math.random(), employee1, department1, startTime1, startTime1);
         var shift2 = new Shift(Math.random(), employee1, department1, startTime1, startTime1);
         
@@ -39,7 +39,7 @@
     
     <div class="container">
     <div>Employee ID:</div>
-    <div><input type='text' class="form-control" name="employee1" id="employee1"/></div>
+    <div><input type='text' class="form-control" name="employee1" id="employee1" value="1"/></div>
     <div>Department:</div>
     <div>
       <select class="form-control" name="department1" id="department1">
