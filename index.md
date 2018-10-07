@@ -16,13 +16,13 @@
         var employee1 = document.getElementById('employee1').value;
         var department1 = document.getElementById('department1').value;
         var startTime1 = $('#datetimepicker1').data('DateTimePicker').date().unix();
-        var endTime1 = document.getElementById('endTime1').value;
+        var endTime1 = $('#datetimepicker2').data('DateTimePicker').date().unix();
         
         console.log(startTime1);
         var employee2 = document.getElementById('employee2').value;
         var department2 = document.getElementById('department2').value;
-        var startTime2 = document.getElementById('startTime2').value;
-        var endTime2 = document.getElementById('endTime2').value;
+        var startTime2 = $('#datetimepicker3').data('DateTimePicker').date().unix();;
+        var endTime2 = $('#datetimepicker4').data('DateTimePicker').date().unix();;
         
         var shift1 = new Shift(Math.random(), employee1, department1, startTime1, endTime1);
         var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
