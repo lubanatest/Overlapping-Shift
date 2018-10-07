@@ -12,40 +12,59 @@
     <script src="shift.js" ></script>
     <script>
       function checkOverlapping() {
-        var error = '';
+        
+        // Get the entered data
         var employee1 = document.getElementById('employee1').value;
         var department1 = document.getElementById('department1').value;
         var startTime1 = $('#datetimepicker1').data('DateTimePicker').date();
-        var endTime1 = $('#datetimepicker2').data('DateTimePicker').date().unix();
+        var endTime1 = $('#datetimepicker2').data('DateTimePicker').date();
         
-        // Validation:
-        if (startTime1)
+        var employee2 = document.getElementById('employee2').value;
+        var department2 = document.getElementById('department2').value;
+        var startTime2 = $('#datetimepicker3').data('DateTimePicker').date();
+        var endTime2 = $('#datetimepicker4').data('DateTimePicker').date();
+       
+        // Validation Shift one
+        //-----------------------------------------------
+        
+        var error = '';:
+        if (startTime1) {
           startTime1 = startTime1.unix();
-        else
+        }
+        else {
           error = 'Start Time should not be empty';
-        if (endTime1)
+        }
+        if (endTime1) {
           endTime1 = endTime1.unix();
-        else
+        }
+        else {
           error = 'End Time should not be empty';
-          
-        console.log(startTime1);
-        console.log(endTime1);
+        }  
         if (startTime1 > endTime1)
           error = 'Start Time should be before End time';
           
-        // --------------------------------------------
-          
-        var employee2 = document.getElementById('employee2').value;
-        var department2 = document.getElementById('department2').value;
-        var startTime2 = $('#datetimepicker3').data('DateTimePicker').date().unix();;
-        var endTime2 = $('#datetimepicker4').data('DateTimePicker').date().unix();;
+        //-----------------------------------------------
+        // Validation Shift two
+        //-----------------------------------------------
+        
+        if (startTime2) {
+          startTime2 = startTime2.unix();
+        }
+        else {
+          error = 'Start Time should not be empty';
+        }
        
-       if (startTime2 > endTime2)
+        if (endTime2) {
+          endTime2 = endTime2.unix();
+        }
+        else {
+          error = 'End Time should not be empty';
+        }  
+        if (startTime2 > endTime2)
           error = 'Start Time should be before End time';
         
-        console.log(startTime2);
-        console.log(endTime2);
-      
+        //-----------------------------------------------
+        
         if (error !== '')
           document.getElementById('result').innerHTML = ' ' + error;
         else {
