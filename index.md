@@ -66,7 +66,7 @@
         //-----------------------------------------------
         
         if (error !== '')
-          document.getElementById('result').innerHTML = ' ' + error;
+          document.getElementById('result').innerHTML = error;
         else {
            var shift1 = new Shift(Math.random(), employee1, department1, startTime1, endTime1);
            var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
