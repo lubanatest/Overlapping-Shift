@@ -3,9 +3,10 @@
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="overlapping.js" ></script>
+    <script src="shift.js" ></script>
     
     <style>
     .container {
@@ -18,6 +19,8 @@
     <h3>Shift One</h3>
     
     <div class="container">
+    <div><b>Employee ID:</b></div>
+    <div><input type='text' class="form-control" name="employee" /></div>
     <div><b>Start Time:</b></div>
     <div class="row">
         <div class='col-sm-6'>
