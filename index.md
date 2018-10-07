@@ -72,6 +72,17 @@
            var shift2 = new Shift(Math.random(), employee2, department2, startTime2, endTime2);
         
            var result = isOverlapping(shift1, shift2);
+           switch (result) {
+             case true:
+              result = 'There is Overlapping';
+              break;
+             case false:
+              result = 'There is NO Overlapping';
+              break;
+             default:
+              result = '';
+              break;
+           }
            document.getElementById('result').innerHTML = 'Result: ' + result.toString();
         }
       }
